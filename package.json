@@ -1,6 +1,6 @@
 {
   "name": "@vhxnyu/potato",
-  "version": "0.1.0-beta",
+  "version": "0.1.0",
   "description": "",
   "exports": {
     "types": "./dist/types/index.d.ts",
