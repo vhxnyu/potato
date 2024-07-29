@@ -1,0 +1,19 @@
+{
+  "configurations": [
+    {
+      "type": "node",
+      "name": "tsx",
+      "runtimeExecutable": "node",
+      "runtimeArgs": [
+        "--import",
+        "tsx"
+      ],
+      "skipFiles": [
+        "<node_internals>/**",
+        "${workspaceFolder}/node_modules/**",
+      ],
+      "request": "launch",
+      "program": "${file}",
+    },
+  ]
+}

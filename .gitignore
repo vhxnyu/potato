@@ -1,0 +1,10 @@
+node_modules
+test
+dist
+.vscode/*.*
+!.vscode/launch.json
+todo.md
+*.todo.md
+src/test.*
+src/test.*.*
+example

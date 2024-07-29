@@ -1,0 +1,44 @@
+{
+  "include": [
+    "./src/*"
+  ],
+  "compilerOptions": {
+    // 编译目标
+    "target": "ES6",
+    // 编译产物使用的模块系统
+    "module": "commonjs",
+    // 源代码文件夹
+    "rootDir": "./src",
+
+    // >>>>> 编译选项 <<<<<
+
+    // 生成类型声明文件
+    "declaration": true,
+    // 类型声明文件的输出目录
+    "declarationDir": "./dist/types",
+    
+    // 编译输出目录
+    "outDir": "./dist",
+    // 类型错误时不编译文件
+    "noEmitOnError": true,
+    // 删除注释
+    "removeComments": false,
+    // esm互操作
+    "esModuleInterop": true,
+    // 编译时添加 "use strict"
+    "alwaysStrict": true,
+    // 保证派生类中的重写成员标有重写修饰符
+    "noImplicitOverride": true,
+    // 在文件名中强制一致的大小写
+    "forceConsistentCasingInFileNames": true,
+
+    // >>>>> 类型校验选项 <<<<<
+
+    // 不允许隐式Any类型
+    "noImplicitAny": true,
+    // 严格空校验
+    "strictNullChecks": true,
+    "skipDefaultLibCheck": true,
+    "skipLibCheck": true
+  }
+}

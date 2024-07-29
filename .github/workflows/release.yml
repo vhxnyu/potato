@@ -1,0 +1,32 @@
+
+name: 发布 npm 版本
+
+# 推送任意版本触发
+on:
+  push:
+    tags:
+      - "v*"
+
+jobs:
+  build: 
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 20.12.2
+      - run: npm ci
+      - run: npm run build
+
+  publish-npm:
+    needs: [build]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 20.12.2
+          registry-url: https://registry.npmjs.org/
+      - run: npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.npm_token}}
