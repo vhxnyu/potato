@@ -14,7 +14,7 @@ npm i @vhxnyu/potato
 **使用 zdjl**
 
 ```js
-const { Potato } = require('@vhxnyu/potato@0.1.2')
+const { Potato } = require('@vhxnyu/potato')
 ```
 
 ## 用例
@@ -29,7 +29,7 @@ import { Potato } from '@vhxnyu/potato'
 const { Potato } = require('@vhxnyu/potato')
 
 // zdjl
-const { Potato } = require('@vhxnyu/potato@0.1.2')
+const { Potato } = require('@vhxnyu/potato')
 
 
 // 实例化
